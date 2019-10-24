@@ -31,3 +31,7 @@ You can also embed plots, for example:
 ![](default_R_githubdoc_files/figure-markdown_github-ascii_identifiers/pressure-1.png)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+-   first item in the list
+-   second item in the list
+-   third item in the list
