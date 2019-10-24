@@ -1,0 +1,11 @@
+---
+title: "RandGitHub"
+output: github_document
+---
+
+## This is a secondary heading
+### This is a tertiary heading
+
+* this is the first item in the list
+* this is the second item in the list
+* this is the third item in the list
