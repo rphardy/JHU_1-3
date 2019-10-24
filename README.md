@@ -1,2 +1,2 @@
 # dsprojects
-data science projects
+data science projects - Coursera: Data Science Specialisation
