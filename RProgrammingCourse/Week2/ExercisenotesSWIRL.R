@@ -30,4 +30,26 @@ evaluate(function(x){x[1]},c(8,4,0)) #this defines a function and passes as the
                                      #it as the func argument. This function
                                      #returns the first index of the vector.
 
+mad_libs <- function(...){
+  args <- list(...)
+  place <- args[["place"]]
+  adjective <- args[["adjective"]]
+  noun <- args[["noun"]]
+  
+  # Don't modify any code below this comment.
+  # Notice the variables you'll need to create in order for the code below to
+  # be functional!
+  paste("News from", place, "today where", adjective, "students took to the streets in protest of the new", noun, "being installed on campus.")
+}
+mad_libs(place = "somewhere", adjective = "hungry", noun = "ramen noodle vending machine")
 
+#Creating a binary operator
+"%p%" <- function(leftword, rightword){ # Remember to add arguments!
+  paste(leftword, rightword)
+}
+
+#pastes left and right. E.g:
+"I" %p% "love" %p% "R!"
+
+t2 <- as.POSIXlt(Sys.time())
+str(unclass(t2))
