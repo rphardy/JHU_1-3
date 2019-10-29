@@ -1,4 +1,4 @@
-#Assignment 2 - Part 2
+#Week 2 Assignment- Part 2
 
 setwd("C:/Users/Richard/dsprojects/RProgrammingCourse/Week2/Week2_Assignment")
 
