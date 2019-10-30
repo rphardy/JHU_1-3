@@ -14,8 +14,8 @@ corr <- function(directory, threshold = 0){
     dat <- read.csv(files_list[i])
     nobs <- sum(complete.cases(dat), na.rm=TRUE)
     if ( nobs > threshold) {
-      xxx <- cor(dat[,"sulfate"],dat[,"nitrate"], use = "pairwise.complete.obs")
-      corrs <- c(corrs, xxx)
+      cori <- cor(dat[,"sulfate"],dat[,"nitrate"], use = "pairwise.complete.obs")
+      corrs <- c(corrs, cori)
     } else {corrs <- corrs}
   }
   print(corrs)
