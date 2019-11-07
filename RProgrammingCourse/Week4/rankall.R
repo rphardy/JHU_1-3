@@ -21,20 +21,20 @@ rankall <- function(outcome,num="best"){
                    "NE" =31, "NH" =32, "NJ" =33, "NM" =34, "NV" =35, "NY" =36, "OH" =37, "OK" =38, 
                    "OR" =39, "PA" =40, "PR" =41, "RI" =42, "SC" =43, "SD" =44, "TN" =45, "TX" =46,
                    "UT" =47, "VA" =48, "VI" =49, "VT" =50, "WA" =51, "WI" =52, "WV" =53, "WY" =54)
-    output <- data.frame(State=as.character(1:54),
-                         Hospital=as.character(NA), 
+    output <- data.frame(state=as.character(1:54),
+                         hospital=as.character(NA), 
                          stringsAsFactors = FALSE)
     for (i in 1:54){
       numdict <- c("best"=1, "worst"=nrow(bystate[[i]]))
       
       if (num %in% names(numdict)){
-        output$State[i] <- bystate[[i]][numdict[num],2]
-        output$Hospital[i]  <-  bystate[[i]][numdict[num],1]
+        output$state[i] <- bystate[[i]][numdict[num],2]
+        output$hospital[i]  <-  bystate[[i]][numdict[num],1]
       } else if (num >1 & num < nrow(bystate[[i]])){
-        output$State[i] <- bystate[[i]][num,2]
-        output$Hospital[i]  <-  bystate[[i]][num,1]
-      } else {output$Hospital[i] <- "NA"
-              output$State[i] <- names(statedict[i])
+        output$state[i] <- bystate[[i]][num,2]
+        output$hospital[i]  <-  bystate[[i]][num,1]
+      } else {output$hospital[i] <- "NA"
+              output$state[i] <- names(statedict[i])
       }
       
     } 
