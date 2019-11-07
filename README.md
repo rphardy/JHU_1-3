@@ -1,4 +1,5 @@
-# dsprojects
-data science projects - Coursera: Data Science Specialisation
+## dsprojects - Private folder
+Data Science Projects - Coursera: Data Science Specialisation
 
-Edited README.md
+#Data Scientist Toolbox
+#R Programming
