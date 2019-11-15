@@ -30,6 +30,7 @@ names(merged_messy)[2]="activity"
 ### Section 2 - Extract only the measurements on the mean and 
 #   standard deviation for each measurement - measurements that have both
 #   mean and s.d. explicitly: i.e. end in mean() and s.d().
+#   Appropriately label the data set with descriptive variable names 
 features <- read.table("./UCI HAR Dataset/features.txt")
 featurenames <- as.character(features[,2])
 names(merged_messy)[3:563] = featurenames
@@ -37,6 +38,7 @@ keeplist<- c(grep("^(*.)+mean+()",featurenames),grep("^(*.)+std+()",featurenames
 keeplist<- sort(keeplist)
 keepnames <- c("subject","activity",featurenames[keeplist])
 merged<- merged_messy[keepnames]
+
 # drop meanFreq()
 droplist <- grep("mean[Ff]req()",keepnames)
 dropnames <- keepnames[droplist]
@@ -45,7 +47,6 @@ names(merged)
 
 ### Section 3 - Use descriptive activity names to name the activities in the 
 #   data set
-
 act_lbl <- read.table("./UCI HAR Dataset/activity_labels.txt") 
 act_lbl
 act_lbls <- as.character(act_lbl$V2)
@@ -53,17 +54,14 @@ merged$activity <- factor(merged$activity,
                     levels = c(1:6),
                     labels = act_lbls)
 
-### Section 4 - Appropriately label the data set with descriptive variable names
-#   Done as part of Section 2
-
-### Section 5 - From the data set in step 4, creates a second, independent tidy 
+### Section 4 - From the data set in step 4, creates a second, independent tidy 
 #   data set with the average of each variable for each activity and 
 #   each subject.
 library(dplyr)
 rm(list=setdiff(ls(), "merged"))
 tidydata<-aggregate(merged, list(subject = merged$subject, activity = merged$activity),mean)
 tidydata[c(3,4)]=NULL
-write.table(tidydata, file="./GCDAssignmentSubmission/tidied_data.txt")
+write.table(tidydata, file="./GCDAssignmentSubmission/tidied_data.txt", row.name=FALSE)
 
 rm(list=ls())
 check <- read.table("./GCDAssignmentSubmission/tidied_data.txt",header=TRUE)
