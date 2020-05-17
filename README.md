@@ -1,5 +1,10 @@
 ## Data Science Projects - Coursera: Data Science Specialisation
 
-- Data Scientist Toolbox
+- The Data Scientist's Toolbox
+deliverables: NA
+
 - R Programming
+deliverables: 
+
+
 - Getting and Cleaning Data
