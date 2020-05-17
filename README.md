@@ -1,5 +1,4 @@
-## Data Science Projects - Coursera: Data Science Specialisation
-
+## Johns Hopkins Data Science Specialisation - Courses 1-3
 ### main deliverables:
 - The Data Scientist's Toolbox:
   - NA
