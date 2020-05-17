@@ -1,6 +1,6 @@
 ## Data Science Projects - Coursera: Data Science Specialisation
 
-- deliverables:
+# deliverables:
 - The Data Scientist's Toolbox:
   - NA
 
