@@ -11,4 +11,3 @@
 
 - Getting and Cleaning Data (This subject developed skills in acquiring data from a wide variety of sources, and developed the fundamentals of producing tidy datasets using R):
   - run_analysis.R
-  
