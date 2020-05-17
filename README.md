@@ -3,11 +3,11 @@
 - The Data Scientist's Toolbox
 deliverables: NA
 
-- R Programming
+- R Programming:
 deliverables: 
- - best.R
- - rankall.R
- - rankhospital.R
+  - best.R
+  - rankall.R
+  - rankhospital.R
 
 
 - Getting and Cleaning Data
