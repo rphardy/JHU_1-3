@@ -10,4 +10,4 @@
   - rankhospital.R
 
 - Getting and Cleaning Data:
-  - fgd
+  - run_analysis.R
