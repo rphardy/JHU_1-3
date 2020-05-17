@@ -2,7 +2,7 @@
 
 - The Data Scientist's Toolbox:
 deliverables: 
- - NA
+  - NA
 
 - R Programming:
 deliverables: 
