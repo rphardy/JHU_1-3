@@ -3,12 +3,12 @@
 - The Data Scientist's Toolbox:
   - N/A. Submitted screenshots demonstrating successful usage of git, github, RStudio
 
-- R Programming:
+- R Programming (This subject developed programming skills in R over approx. 60 hours, and culminated in a challenging programming assignment):
   - best.R
   - rankall.R
   - rankhospital.R
-  This subject developed programming skills in R over approx. 60 hours, and culminated in a challenging programming assignment. 
+   
 
-- Getting and Cleaning Data:
+- Getting and Cleaning Data (This subject developed skills in acquiring data from a wide variety of sources, and developed the fundamentals of producing tidy datasets using R):
   - run_analysis.R
-  This subject developed skills in acquiring data from a wide variety of sources, and developed the fundamentals of producing tidy datasets using R
+  
